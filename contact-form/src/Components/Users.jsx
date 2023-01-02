@@ -1,7 +1,18 @@
 import React from 'react'
-
-export default function Users() {
+import {Container, Row} from 'react-bootstrap'
+import User from './User'
+export default function Users(props) {
   return (
-    <div>Users</div>
+    <Container>
+      <Row>
+        {
+          props.userData.map((user , index) => {
+            return <User userInfo={user} key={index}/>
+
+          })
+
+        }
+      </Row>
+    </Container>
   )
 }
