@@ -3,8 +3,8 @@ import { Card, Col } from 'react-bootstrap'
 
 export default function User(props) {
   return (
-    <Col md="3">
-      <Card style={{ width: '18rem' }}>
+    <Col md="4" style={{marginBottom: "1rem"}} >
+      <Card >
       <Card.Body>
       <Card.Subtitle className="mb-2 text-muted">Codetrain</Card.Subtitle>
         <Card.Title>{props.userInfo.name}</Card.Title>

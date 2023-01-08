@@ -3,6 +3,7 @@ import React , {Component} from 'react'
 import './App.css';
 import { Col, Container, Row } from 'react-bootstrap';
 import Users from './Components/Users';
+import AddUserForm from './Components/AddUserForm';
 
 
 class App extends Component {
@@ -31,13 +32,13 @@ class App extends Component {
   render(){
   return (
    <>
-     <Container fluid>
+     <Container fluid style={{ marginTop: '2rem'}}>
       <Row>
         <Col md="4">
-          Form
+          <AddUserForm />
         </Col>
         <Col>
-         <Users userData ={this.state.user}/>
+         <Users userData ={this.state.users}/>
         </Col>
       </Row>
 
